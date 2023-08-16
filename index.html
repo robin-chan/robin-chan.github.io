@@ -24,11 +24,13 @@
             </div>
             <div class="collapse navbar-collapse justify-content-end" id="navigation">
               <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link smooth-scroll" href=
-                "#about">About</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#top">Top &uarr;</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#about">About</a></li>
                 <li class="nav-item"><a class="nav-link smooth-scroll" href="#research">Research</a></li>
                 <li class="nav-item"><a class="nav-link smooth-scroll" href="#experience">Experience</a></li>
                 <li class="nav-item"><a class="nav-link smooth-scroll" href="#education">Education</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="https://www.user.tu-berlin.de/chan/" target="_blank">One Pager</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="cv.pdf" target="_blank">CV</a></li>
               </ul>
             </div>
           </div>
@@ -36,7 +38,7 @@
       </div>
     </header>
 
-<div class="profile-page">
+<div class="profile-page" id="top">
   <div class="wrapper">
     <div class="page-header page-header-small">
       <div class="page-header-image" data-parallax="true" style="background-image: url('images/pp-bg.jpg');"></div>
@@ -59,8 +61,9 @@
         <div class="col-lg-6 col-md-12">
           <div class="card-body">
             <div class="h4 mt-0 title">About</div>
-            <p>Welcome! My name is Robin Chan and I am a researcher at the Bielefeld University, Germany.</p>
-            <p>My main research interest lies in safe artificial intelligence systems, in particular for the application in automated driving. Currently, I am mainly focussing on detection techniques of unknown objects in semantic segmentation.
+            <p>Welcome! My name is Robin Chan and I am a machine learning researcher at the <a href="https://www.uni-bielefeld.de/" target="_blank">Bielefeld University</a> and the <a href="https://www.tu.berlin/en/" target="_blank">Technische Universität Berlin</a> in Germany.</p>
+            <p>My main research interest lies in developing methods for safe AI, in particular for computer vision in the context of automated driving. 
+              Currently, I am mainly focussing on detection techniques of unknown objects in semantic segmentation.
             </p>
           </div>
         </div>
@@ -69,7 +72,7 @@
             <div class="h4 mt-0 title">Basic Information</div>
             <div class="row">
               <div class="col-sm-4"><strong class="text-uppercase">Age:</strong></div>
-              <div class="col-sm-8">29</div>
+              <div class="col-sm-8">30</div>
             </div>
             <div class="row mt-3">
               <div class="col-sm-4"><strong class="text-uppercase">Email:</strong></div>
@@ -86,12 +89,12 @@
               </div>
             </div>
             <div class="row mt-3">
-              <div class="col-sm-4"><strong class="text-uppercase">Phone:</strong></div>
-              <div class="col-sm-8">+49 202 439-1704</div>
+              <div class="col-sm-4"><strong class="text-uppercase">Main Office:</strong></div>
+              <div class="col-sm-8">CITEC 2-224 at Inspiration 1, 33619 Bielefeld, Germany</div>
             </div>
             <div class="row mt-3">
-              <div class="col-sm-4"><strong class="text-uppercase">Office:</strong></div>
-              <div class="col-sm-8">FZ.00.02 at Lise-Meitner-Str. 27-31, 42119 Wuppertal, Germany</div>
+              <div class="col-sm-4"><strong class="text-uppercase">Second Office:</strong></div>
+              <div class="col-sm-8">MA-5-567 at Straße des 17. Juni 136, 10623 Berlin , Germany</div>
             </div>
           </div>
         </div>
@@ -113,6 +116,29 @@
 <div class="section" id="research">
   <div class="container">
     <div class="h4 text-center mb-4 title">Recent Research Projects</div>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+        <br><img src="images/project8_lu_net/sampling_mnist.png" alt="Image"/>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+        <br><img src="images/project8_lu_net/sampling_fashion.png" alt="Image"/>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+        <br><img src="images/project8_lu_net/interpolation_mnist.png" alt="Image"/>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+        <br><img src="images/project8_lu_net/interpolation_fashion.png" alt="Image"/>
+      </div>
+      <div class="col-lg-12"><br>
+        <div class="card card-body" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+        <div class="h5">LU-Net: Invertible Neural Networks Based on Matrix Factorization</div>
+        <p><strong class="text-uppercase">Abstract. </strong>LU-Net is a simple and fast architecture for invertible neural networks (INN) that is based on the factorization of quadratic weight matrices A=LU, where L is a lower triangular matrix with ones on the diagonal and U an upper triangular matrix. Instead of learning a fully occupied matrix A, we learn L and U separately. If combined with an invertible activation function, such layers can easily be inverted whenever the diagonal entries of U are different from zero. Also, the computation of the determinant of the Jacobian matrix of such layers is cheap. Consequently, the LU architecture allows for cheap computation of the likelihood via the change of variables formula and can be trained according to the maximum likelihood principle. In our numerical experiments, we test the LU-Net architecture as generative model on several academic datasets. We also provide a detailed comparison with conventional invertible neural networks in terms of performance, training as well as run time.</p>
+        <p><strong class="text-uppercase">Published </strong><i> in The IEEE International Joint Conference on Neural Networks (IJCNN) 2023.</i> Available: <a href="https://arxiv.org/abs/2302.10524" target="_blank">https://arxiv.org/abs/2302.10524</a></p>
+        </div>
+      </div>
+    </div>
+    <br><br>
     
     <div class="row justify-content-center">
       <div class="col-lg-6 col-md-6">
@@ -125,7 +151,7 @@
         <div class="card card-body" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
         <div class="h5">What should AI see? Using the Public's Opinion to Determine the Perception of an AI</div>
         <p><strong class="text-uppercase">Abstract. </strong>Deep neural networks (DNN) have made impressive progress in the interpretation of image data, so that it is conceivable and to some degree realistic to use them in safety critical applications like automated driving. From an ethical standpoint, the AI algorithm should take into account the vulnerability of objects or subjects on the street that ranges from "not at all", e.g. the road itself, to "high vulnerability" of pedestrians. One way to take this into account is to define the cost of confusion of one semantic category with another and use cost-based decision rules for the interpretation of probabilities, which are the output of DNNs. However, it is an open problem how to define the cost structure, who should be in charge to do that, and thereby define what AI-algorithms will actually "see". As one possible answer, we follow a participatory approach and set up an online survey to ask the public to define the cost structure. We present the survey design and the data acquired along with an evaluation that also distinguishes between perspective (car passenger vs. external traffic participant) and gender. Using simulation based F-tests, we find highly significant differences between the groups. These differences have consequences on the reliable detection of pedestrians in a safety critical distance to the self-driving car. We discuss the ethical problems that are related to this approach and also discuss the problems emerging from human-machine interaction through the survey from a psychological point of view. Finally, we include comments from industry leaders in the field of AI safety on the applicability of survey based elements in the design of AI functionalities in automated driving.</p>
-        <p><strong class="text-uppercase">To be Published </strong><i> in AI and Ethics.</i> Available: <a href="https://arxiv.org/abs/2206.04776" target="_blank">https://arxiv.org/abs/2206.04776</a> Website: <a href="http://www-ai.math.uni-wuppertal.de/~chan/poll/" target="_blank">https://uni-w.de/1hx</a></p>
+        <p><strong class="text-uppercase">Published </strong><i> in AI and Ethics.</i> Available: <a href="https://arxiv.org/abs/2206.04776" target="_blank">https://arxiv.org/abs/2206.04776</a> Website: <a href="http://www-ai.math.uni-wuppertal.de/~chan/poll/" target="_blank">https://uni-w.de/1hx</a></p>
         </div>
       </div>
     </div>
@@ -262,6 +288,21 @@
 <div class="section" id="experience">
   <div class="container cc-experience">
     <div class="h4 text-center mb-4 title">Work Experience</div>
+    <div class="card">
+      <div class="row">
+        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body cc-experience-header">
+            <div class="h5">Since Apr 23</div>
+          </div>
+        </div>
+        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body">
+            <div class="h5">Postdoctoral Researcher</div>
+            <p class="category">Technische Universität Berlin | Institute of Mathematics | Mathematical Modeling of Industrial Life Cycles | Berlin, Germany</p>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="card">
       <div class="row">
         <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
@@ -417,8 +458,13 @@
     <div class="text-center">
       <div class="row">
         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 col-6 cc-link-image">
-          <a href="https://www.cit-ec.de/en">
-            <img src="images/logos/citec.svg">
+          <a href="https://hammer-lab.techfak.uni-bielefeld.de">
+            <img src="images/logos/hammerlab.svg">
+          </a><br><br>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 col-6 cc-link-image">
+          <a href="https://www.mkw.nrw/hochschule-und-forschung/foerderungen/foerderlinie-kuenstliche-intelligenz-maschinelles-lernen">
+            <img src="images/logos/nrw.svg">
           </a><br><br>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 col-6 cc-link-image">
@@ -429,11 +475,6 @@
         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 col-6 cc-link-image">
           <a href="https://www.ki-absicherung-projekt.de/en/">
             <img src="images/logos/kia.png">
-          </a><br><br>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 col-6 cc-link-image">
-          <a href="https://www.mkw.nrw/hochschule-und-forschung/foerderungen/foerderlinie-kuenstliche-intelligenz-maschinelles-lernen">
-            <img src="images/logos/nrw.svg">
           </a><br><br>
         </div>
       </div>
@@ -449,9 +490,9 @@
         <a class="cc-facebook btn btn-link" href="https://www.semanticscholar.org/author/R.-Chan/4253866"><i class="ai ai-semantic-scholar-square ai-5x" aria-hidden="true"></i></a>
         <a class="cc-facebook btn btn-link" href="https://www.researchgate.net/profile/Robin-Chan"><i class="ai ai-researchgate ai-5x" aria-hidden="true"></i></a>
         <a class="cc-facebook btn btn-link" href="https://orcid.org/0000-0003-2935-3275"><i class="ai ai-orcid ai-5x" aria-hidden="true"></i></a> -->
-        <div class="h4 title text-center">Last updated on 1st August 2022 by Robin Chan</div>
+        <div class="h4 title text-center">Last updated on 16th August 2023 by Robin Chan</div>
         <div class="text-center text-muted">
-            Copyright &copy; 2022 - 
+            Copyright &copy; 2023 - 
             <!--Design <a class="credit" href="https://templateflip.com" target="_blank">TemplateFlip</a> - -->
             <a class="credit" data-toggle="modal" data-target=".bd-example-modal-lg">Disclaimer</a>
             <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
